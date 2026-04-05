@@ -9,6 +9,8 @@ const mimeTypes = {
     '.css': 'text/css',
     '.js': 'application/javascript',
     '.json': 'application/json',
+    '.xml': 'application/xml',
+    '.txt': 'text/plain',
     '.png': 'image/png',
     '.jpg': 'image/jpeg',
     '.jpeg': 'image/jpeg',
@@ -16,7 +18,11 @@ const mimeTypes = {
     '.svg': 'image/svg+xml',
     '.ico': 'image/x-icon',
     '.avif': 'image/avif',
-    '.webp': 'image/webp'
+    '.webp': 'image/webp',
+    '.mp4': 'video/mp4',
+    '.m4v': 'video/mp4',
+    '.mov': 'video/quicktime',
+    '.heic': 'image/heic'
 };
 
 http.createServer((req, res) => {

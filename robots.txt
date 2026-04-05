@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /privacy-policy.html
+Disallow: /cookie-policy.html
+Disallow: /terms-of-service.html
+Disallow: /dpa.html
+
+Sitemap: https://flowtusk.com/sitemap.xml

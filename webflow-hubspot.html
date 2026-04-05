@@ -5,9 +5,9 @@
   <title>Flowtusk — Stop Losing Leads from Your Webflow Forms</title>
   <meta name="description" content="Flowtusk automatically routes Webflow form submissions into HubSpot CRM pipelines. No Zapier. No code. No manual entry. Set up once, never touch it again.">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://flowtusk.com/">
+  <link rel="canonical" href="https://flowtusk.com/webflow-hubspot">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://flowtusk.com/">
+  <meta property="og:url" content="https://flowtusk.com/webflow-hubspot">
   <meta property="og:title" content="Flowtusk — Stop Losing Leads from Your Webflow Forms">
   <meta property="og:description" content="Automatically route Webflow form submissions into HubSpot CRM pipelines. No Zapier. No code. No manual entry.">
   <meta property="og:image" content="https://flowtusk.com/images/webclip.png">
@@ -20,7 +20,7 @@
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     "name": "Flowtusk",
-    "url": "https://flowtusk.com/",
+    "url": "https://flowtusk.com/webflow-hubspot",
     "description": "Flowtusk automatically routes Webflow form submissions into HubSpot CRM pipelines. No Zapier. No code. No manual entry.",
     "applicationCategory": "BusinessApplication",
     "operatingSystem": "Web",
@@ -81,36 +81,31 @@
     }
     .ai-agents-item {
       display: flex;
-      align-items: flex-start;
+      align-items: center;
       gap: 12px;
     }
     .ai-check-icon {
       flex-shrink: 0;
       width: 22px;
       height: 22px;
-      margin-top: 3px;
     }
     .ai-agents-visual {
       flex: 1 1 0;
-      border-radius: 0;
-      overflow: visible;
-      border: 0;
-      background-color: transparent;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid #1e1e1e;
+      background-color: #111;
       display: flex;
-      align-items: center;
+      align-items: stretch;
       justify-content: center;
-      min-height: auto;
-      padding: 0;
+      min-height: 360px;
     }
     .ai-agents-img {
-      width: 78%;
-      max-width: 460px;
-      height: auto;
-      object-fit: contain;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
       display: block;
-      border-radius: 0;
-      margin: 0 auto;
-      background: transparent;
+      border-radius: 16px;
     }
     @media screen and (max-width: 768px) {
       .ai-agents-split {
@@ -120,10 +115,7 @@
       }
       .ai-agents-visual {
         width: 100%;
-        min-height: auto;
-      }
-      .ai-agents-img {
-        width: 84%;
+        min-height: 220px;
       }
     }
 
@@ -181,94 +173,6 @@
       color: #1c52ff;
       font-weight: 600;
     }
-
-    .icon-wrapper.multi-icons {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      background-color: #161616;
-      border-radius: 99px;
-      padding: 11px 14px;
-      box-shadow: none;
-      width: auto;
-      height: auto;
-      position: relative;
-      overflow: hidden;
-    }
-    .icon-wrapper.multi-icons .animation-element {
-      width: 74%;
-      top: 50%;
-      right: -6px;
-      left: auto;
-      transform: translateY(-50%);
-      pointer-events: none;
-    }
-    .icon-wrapper.multi-icons .icon.mini {
-      width: 18px;
-      height: 18px;
-      min-width: 18px;
-      object-fit: contain;
-      background: transparent;
-      border: 0;
-      border-radius: 0;
-      padding: 0;
-      box-sizing: border-box;
-      margin-left: 0;
-      position: relative;
-      z-index: 1;
-      display: block;
-    }
-    .icon-wrapper.multi-icons .icon.mini:first-child {
-      margin-left: 0;
-    }
-    .hero-social-proof {
-      display: flex;
-      flex-direction: column;
-      gap: 4px;
-    }
-    .hero-stars {
-      display: flex;
-      gap: 2px;
-    }
-    .icon.hero-star {
-      width: 13px;
-      height: 13px;
-      min-width: 13px;
-    }
-    .hero-rating {
-      font-size: 11px;
-      color: #888;
-      margin-left: 4px;
-      line-height: 1;
-      align-self: center;
-    }
-    /* Enterprise video panel — match height to tabs, crop right edge */
-    .wrapper.flex {
-      align-items: stretch;
-    }
-    .enterprise-panel {
-      align-self: stretch;
-      justify-content: flex-start;
-    }
-    .enterprise-slides {
-      flex: 1;
-      overflow: hidden;
-      border-radius: 24px;
-    }
-    .enterprise-slide {
-      height: 100%;
-    }
-    .enterprise-slide.active {
-      height: 100%;
-    }
-    .enterprise-img {
-      height: 100%;
-      object-fit: cover;
-      object-position: left center;
-      width: 100%;
-      border-radius: 0;
-    }
   </style>
 </head>
 <body><img src="images/ggg.png" loading="lazy" sizes="(max-width: 1400px) 100vw, 1400px" srcset="images/691148fc1c41e1a17acb6bf1_Bg-1-p-500.png 500w, images/691148fc1c41e1a17acb6bf1_Bg-1-p-800.png 800w, images/691148fc1c41e1a17acb6bf1_Bg-1-p-1080.png 1080w, images/ggg.png 1400w" alt="" class="background hide">
@@ -287,7 +191,7 @@
                 <a href="#pricing" class="navbar-link">Pricing</a>
                 <a href="#faq" class="navbar-link">FAQ</a>
               </div>
-              <a data-wf--button--variant="base" href="#contact" class="button w-button">Contact</a>
+              <a data-wf--button--variant="base" href="mailto:hasan@flowtusk.com" class="button w-button">Contact</a>
             </li>
           </ul>
         </div>
@@ -299,29 +203,24 @@
       <div class="container-medium">
         <div class="section-tittle"><img src="images/6911483925d3c8f4ba6541d6_Star-1-2.svg" loading="lazy" alt="" class="icon mini-hero">
           <div class="badge">
-            <div class="title-badge white">For Webflow teams and agencies</div>
+            <div class="title-badge white">FOR WEBFLOW + HUBSPOT TEAMS</div>
           </div>
           <div class="text">
-            <h1 class="heading-style-h1">Build in Webflow.<br>Connect everything else in minutes.</h1>
-            <p class="paragraph-large">Replace broken HubSpot integrations and complex Zapier setups with automations</br>that actually work. Natively made for Webflow to save hours of manual integration work.</p>
+            <h1 class="heading-style-h1">Stop losing valuable leads from your Webflow forms</h1>
+            <p class="paragraph-large">Each form submission on your Webflow site is a revenue opportunity.<br><strong>Don't lose them</strong> through Webflow's poor form logic and broken integrations.</p>
           </div>
           <div class="button-column">
-            <a data-wf--button--variant="base" href="#" class="button w-button">Connect your site free</a>
-            <a href="#how-it-works" class="button secondary w-button">See how it works</a>
+            <a data-wf--button--variant="base" href="#" class="button w-button">Connect your form →</a>
+            <a href="#" class="button secondary w-button">See how it works →</a>
           </div>
         </div>
         <div class="badge transparant">
-          <div class="column-image"><img src="https://i.pravatar.cc/120?img=12" loading="lazy" alt="Team avatar" class="profile-mini"><img src="https://i.pravatar.cc/120?img=32" loading="lazy" alt="Team avatar" class="profile-mini"><img src="https://i.pravatar.cc/120?img=47" loading="lazy" alt="Team avatar" class="profile-mini"></div>
-          <div class="hero-social-proof">
-            <div class="hero-stars">
-              <img src="images/691152b39472df5114fea3ff_pepicons-pencil--star-filled-p-500.png" loading="lazy" alt="star" class="icon hero-star"><img src="images/691152b39472df5114fea3ff_pepicons-pencil--star-filled-p-500.png" loading="lazy" alt="star" class="icon hero-star"><img src="images/691152b39472df5114fea3ff_pepicons-pencil--star-filled-p-500.png" loading="lazy" alt="star" class="icon hero-star"><img src="images/691152b39472df5114fea3ff_pepicons-pencil--star-filled-p-500.png" loading="lazy" alt="star" class="icon hero-star"><img src="images/691152b39472df5114fea3ff_pepicons-pencil--star-filled-p-500.png" loading="lazy" alt="star" class="icon hero-star"><span class="hero-rating">5/5</span>
-            </div>
-            <div class="tittle-badge">100+ early adopters</div>
-          </div>
-        </div><img src="images/hero.png" loading="lazy" alt="Flowtusk hero preview" class="dashboard">
+          <div class="column-image"><img src="images/6911483925d3c8f4ba65416b_Dynamic-Afro-Portrait.avif" loading="lazy" alt="" class="profile-mini"><img src="images/6911483925d3c8f4ba65416a_Dynamic-Portrait-Pose.avif" loading="lazy" alt="" class="profile-mini"><img src="images/6911483925d3c8f4ba654169_Dynamic-Black-and-White-Portrait-3.jpeg" loading="lazy" sizes="(max-width: 960px) 100vw, 960px" srcset="images/6911483925d3c8f4ba654169_Dynamic-Black-and-White-Portrait-3-p-500.jpeg 500w, images/6911483925d3c8f4ba654169_Dynamic-Black-and-White-Portrait-3-p-800.jpeg 800w, images/6911483925d3c8f4ba654169_Dynamic-Black-and-White-Portrait-3.jpeg 960w" alt="" class="profile-mini"></div>
+          <div class="tittle-badge">No Zapier · No code · No manual entry</div>
+        </div><img src="images/69114c0838387e308bbc8617_87dd3b5444001248c97ddfcd1df9507e_Dashboard.png" loading="lazy" sizes="(max-width: 1873px) 100vw, 1873px" srcset="images/69114c0838387e308bbc8617_87dd3b5444001248c97ddfcd1df9507e_Dashboard-p-500.png 500w, images/69114c0838387e308bbc8617_87dd3b5444001248c97ddfcd1df9507e_Dashboard-p-800.png 800w, images/69114c0838387e308bbc8617_87dd3b5444001248c97ddfcd1df9507e_Dashboard-p-1080.png 1080w, images/69114c0838387e308bbc8617_87dd3b5444001248c97ddfcd1df9507e_Dashboard-p-1600.png 1600w, images/69114c0838387e308bbc8617_87dd3b5444001248c97ddfcd1df9507e_Dashboard.png 1873w" alt="" class="dashboard">
         <div class="sub-container">
           <div class="badge-column">
-            <div class="tittle-badge white">Used by Webflow agencies and product teams across the UK, EU, and US.</div>
+            <div class="tittle-badge white">Loved by teams using</div>
           </div>
           <div class="marquee-wrapper">
             <div class="marquee-track" id="marquee-track"></div>
@@ -337,37 +236,44 @@
           <!-- Left: text -->
           <div class="ai-agents-text">
             <div class="badge">
-              <div class="title-badge white">Why Flowtusk exists</div>
+              <div class="title-badge white">AI-Powered Automation</div>
             </div>
-            <h2 class="heading-style-h2 left">The missing automation layer<br>for Webflow.</h2>
-            <p class="paragraph-large left">Webflow builds great sites but it doesn't connect them. Every form submission, lead generation, CMS change, and bookings that happens on your site sits in Webflow waiting for manual setup.</p>
+            <h2 class="heading-style-h2 left">Meet AI Agents.<br>Automation That Decides.</h2>
+            <p class="paragraph-large left">Agents don't just trigger. They monitor conditions, apply logic, and act across tools without you. Set the goal. Agents handle the steps.</p>
             <ul class="ai-agents-list">
               <li class="ai-agents-item">
                 <svg class="ai-check-icon" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="11" cy="11" r="10" stroke="#1c52ff" stroke-width="1.5"/>
                   <path d="M7 11l3 3 5-5" stroke="#1c52ff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
-                <span class="paragraph-regular left"><strong>Save hours every week.</strong> Stop moving data by hand. Form submissions reach HubSpot the moment they happen.</span>
+                <span class="paragraph-regular left">Handles exceptions, not just happy paths</span>
               </li>
               <li class="ai-agents-item">
                 <svg class="ai-check-icon" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="11" cy="11" r="10" stroke="#1c52ff" stroke-width="1.5"/>
                   <path d="M7 11l3 3 5-5" stroke="#1c52ff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
-                <span class="paragraph-regular left"><strong>Cut your tool costs.</strong> No Zapier subscription. No Enterprise Webflow plan. Flowtusk works on any plan and costs less than the combined tools.</span>
+                <span class="paragraph-regular left">Works with Claude, GPT-4, Cursor</span>
               </li>
               <li class="ai-agents-item">
                 <svg class="ai-check-icon" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="11" cy="11" r="10" stroke="#1c52ff" stroke-width="1.5"/>
                   <path d="M7 11l3 3 5-5" stroke="#1c52ff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
-                <span class="paragraph-regular left"><strong>Set it up once.</strong> Unlike Zapier flows that break when the API changes, Flowtusk connects directly to Webflow. Configure it once. It keeps working.</span>
+                <span class="paragraph-regular left">One agent, multiple clients</span>
+              </li>
+              <li class="ai-agents-item">
+                <svg class="ai-check-icon" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="11" cy="11" r="10" stroke="#1c52ff" stroke-width="1.5"/>
+                  <path d="M7 11l3 3 5-5" stroke="#1c52ff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span class="paragraph-regular left">Human-in-the-Loop: review and approve before actions run</span>
               </li>
             </ul>
           </div>
-          <!-- Right: visual -->
+          <!-- Right: visual placeholder -->
           <div class="ai-agents-visual">
-            <img src="images/wf-eco.png" loading="lazy" alt="Flowtusk ecosystem diagram" class="ai-agents-img">
+            <img src="https://placehold.co/560x380/111111/333333?text=AI+Agent+Workflow" alt="AI Agent Workflow diagram" class="ai-agents-img">
           </div>
         </div>
       </div>
@@ -449,63 +355,63 @@ how much revenue they're silently losing</p>
           </div>
           <div class="text">
             <h2 class="heading-style-h2" id="how-it-works">Set up once. <span class="text-span">Never touch it again.</span></h2>
-            <p class="paragraph-large center">Every Webflow event, connected to the tools your team already uses.</p>
+            <p class="paragraph-large center">Flowtusk handles the plumbing so your team can focus on closing.</p>
           </div>
         </div>
         <div class="wrapper">
           <div class="grid features">
             <div class="card features">
               <div class="icon-wrapper-outline">
-                <div class="icon-wrapper multi-icons"><img loading="lazy" src="images/Webflow_id2IyfqSKv_1.png" alt="Webflow" class="icon mini"><img loading="lazy" src="images/HubSpot_Symbol_1.png" alt="HubSpot" class="icon mini"><img loading="lazy" src="images/6912a8c563edc57efb665044_Animate.png" alt="" class="animation-element"></div>
+                <div class="icon-wrapper"><img loading="lazy" src="https://cdn.simpleicons.org/webflow/146EF5" alt="Webflow" class="icon mini"><img loading="lazy" src="images/6912a8c563edc57efb665044_Animate.png" alt="" class="animation-element"></div>
               </div>
               <div class="content features">
                 <div class="sub-heading-regular center">Capture every lead</div>
-                <p class="paragraph-regular center">Form submitted. Contact created in HubSpot. Deal logged. Sequence started. No CSV exports, no manual entry.</p>
+                <p class="paragraph-regular center">No form submission slips through. Every entry is captured the moment it happens.</p>
               </div><img loading="lazy" src="images/69116619cadc44160b6c3a7f_Element-2.png" alt="" class="element-card _2"><img loading="lazy" src="images/691165d833ad0031000526b0_Element-1.png" alt="" class="element-card"><img loading="lazy" src="images/6911483925d3c8f4ba6541d6_Star-1-2.svg" alt="" class="icon small">
             </div>
             <div class="card features">
               <div class="icon-wrapper-outline">
-                <div class="icon-wrapper multi-icons"><img loading="lazy" src="images/Webflow_id2IyfqSKv_1.png" alt="Webflow" class="icon mini"><img loading="lazy" src="images/HubSpot_Symbol_1.png" alt="HubSpot" class="icon mini"><img loading="lazy" src="images/6912a8c563edc57efb665044_Animate.png" alt="" class="animation-element"></div>
+                <div class="icon-wrapper"><img loading="lazy" src="https://cdn.simpleicons.org/hubspot/FF7A59" alt="HubSpot" class="icon mini"><img loading="lazy" src="images/6912a8c563edc57efb665044_Animate.png" alt="" class="animation-element"></div>
               </div>
               <div class="content features">
-                <div class="sub-heading-regular center">Trigger your sales workflows</div>
-                <p class="paragraph-regular center">The moment a form comes in, HubSpot fires your nurture sequence, assigns the deal, and routes it to the right rep.</p>
+                <div class="sub-heading-regular center">Map fields in minutes</div>
+                <p class="paragraph-regular center">Match Webflow form fields to HubSpot contact properties with a point-and-click interface. No code required.</p>
               </div><img loading="lazy" src="images/69116619cadc44160b6c3a7f_Element-2.png" alt="" class="element-card _2"><img loading="lazy" src="images/691165d833ad0031000526b0_Element-1.png" alt="" class="element-card"><img loading="lazy" src="images/6911483925d3c8f4ba6541d6_Star-1-2.svg" alt="" class="icon small">
             </div>
             <div class="card features">
               <div class="icon-wrapper-outline">
-                <div class="icon-wrapper multi-icons"><img loading="lazy" src="images/Webflow_id2IyfqSKv_1.png" alt="Webflow" class="icon mini"><img loading="lazy" src="images/Slack_Symbol_1.png" alt="Slack" class="icon mini"><img loading="lazy" src="images/6912a8c563edc57efb665044_Animate.png" alt="" class="animation-element"></div>
+                <div class="icon-wrapper"><img loading="lazy" src="https://cdn.simpleicons.org/hubspot/FF7A59" alt="HubSpot" class="icon mini"><img loading="lazy" src="images/6912a8c563edc57efb665044_Animate.png" alt="" class="animation-element"></div>
               </div>
               <div class="content features">
-                <div class="sub-heading-regular center">Orders that notify your team instantly</div>
-                <p class="paragraph-regular center">New order placed. Slack message sent before anyone logs in.</p>
+                <div class="sub-heading-regular center">Trigger HubSpot workflows</div>
+                <p class="paragraph-regular center">Contact created. Workflow fires. Your nurture sequence starts — without you lifting a finger.</p>
               </div><img loading="lazy" src="images/69116619cadc44160b6c3a7f_Element-2.png" alt="" class="element-card _2"><img loading="lazy" src="images/691165d833ad0031000526b0_Element-1.png" alt="" class="element-card"><img loading="lazy" src="images/6911483925d3c8f4ba6541d6_Star-1-2.svg" alt="" class="icon small">
             </div>
             <div class="card features">
               <div class="icon-wrapper-outline">
-                <div class="icon-wrapper multi-icons"><img loading="lazy" src="images/Webflow_id2IyfqSKv_1.png" alt="Webflow" class="icon mini"><img loading="lazy" src="images/Slack_Symbol_1.png" alt="Slack" class="icon mini"><img loading="lazy" src="images/6912a8c563edc57efb665044_Animate.png" alt="" class="animation-element"></div>
+                <div class="icon-wrapper"><img loading="lazy" src="https://cdn.simpleicons.org/webflow/146EF5" alt="Webflow" class="icon mini"><img loading="lazy" src="images/6912a8c563edc57efb665044_Animate.png" alt="" class="animation-element"></div>
               </div>
               <div class="content features">
-                <div class="sub-heading-regular center">Publish once. Team notified immediately.</div>
-                <p class="paragraph-regular center">CMS item goes live. Slack message fires to your content channel, your client, or your dev team.</p>
+                <div class="sub-heading-regular center">Real-time sync</div>
+                <p class="paragraph-regular center">Leads appear in HubSpot in seconds. No batch jobs. No delays. No “where did that submission go?”</p>
               </div><img loading="lazy" src="images/69116619cadc44160b6c3a7f_Element-2.png" alt="" class="element-card _2"><img loading="lazy" src="images/691165d833ad0031000526b0_Element-1.png" alt="" class="element-card"><img loading="lazy" src="images/6911483925d3c8f4ba6541d6_Star-1-2.svg" alt="" class="icon small">
             </div>
             <div class="card features">
               <div class="icon-wrapper-outline">
-                <div class="icon-wrapper multi-icons"><img loading="lazy" src="images/Webflow_id2IyfqSKv_1.png" alt="Webflow" class="icon mini"><img loading="lazy" src="images/Gmail_idrA5FDGTH_1.png" alt="Gmail" class="icon mini"><img loading="lazy" src="images/6912a8c563edc57efb665044_Animate.png" alt="" class="animation-element"></div>
+                <div class="icon-wrapper"><img loading="lazy" src="https://cdn.simpleicons.org/webflow/146EF5" alt="Webflow" class="icon mini"><img loading="lazy" src="images/6912a8c563edc57efb665044_Animate.png" alt="" class="animation-element"></div>
               </div>
               <div class="content features">
-                <div class="sub-heading-regular center">Automate your email follow-ups</div>
-                <p class="paragraph-regular center">New member signup, form submission, or order placed. Flowtusk fires a Gmail to the right person at the right moment.</p>
+                <div class="sub-heading-regular center">Manage multiple sites</div>
+                <p class="paragraph-regular center">One dashboard for all your Webflow sites. Agencies: set up client sites without logging in and out.</p>
               </div><img loading="lazy" src="images/69116619cadc44160b6c3a7f_Element-2.png" alt="" class="element-card _2"><img loading="lazy" src="images/691165d833ad0031000526b0_Element-1.png" alt="" class="element-card"><img loading="lazy" src="images/6911483925d3c8f4ba6541d6_Star-1-2.svg" alt="" class="icon small">
             </div>
             <div class="card features">
               <div class="icon-wrapper-outline">
-                <div class="icon-wrapper multi-icons"><img loading="lazy" src="images/HubSpot_Symbol_1.png" alt="HubSpot" class="icon mini"><img loading="lazy" src="images/Slack_Symbol_1.png" alt="Slack" class="icon mini"><img loading="lazy" src="images/Gmail_idrA5FDGTH_1.png" alt="Gmail" class="icon mini"><img loading="lazy" src="images/6912a8c563edc57efb665044_Animate.png" alt="" class="animation-element"></div>
+                <div class="icon-wrapper"><img loading="lazy" src="https://cdn.simpleicons.org/hubspot/FF7A59" alt="HubSpot" class="icon mini"><img loading="lazy" src="images/6912a8c563edc57efb665044_Animate.png" alt="" class="animation-element"></div>
               </div>
               <div class="content features">
-                <div class="sub-heading-regular center">One trigger. Every tool.</div>
-                <p class="paragraph-regular center">A single Webflow event can hit HubSpot, Slack, and Gmail at the same time. Build multi-step flows on a visual canvas.</p>
+                <div class="sub-heading-regular center">No Enterprise plan needed</div>
+                <p class="paragraph-regular center">Works on any Webflow plan. You don’t need to spend $10,000/year on Enterprise to get a reliable integration.</p>
               </div><img loading="lazy" src="images/69116619cadc44160b6c3a7f_Element-2.png" alt="" class="element-card _2"><img loading="lazy" src="images/691165d833ad0031000526b0_Element-1.png" alt="" class="element-card"><img loading="lazy" src="images/6911483925d3c8f4ba6541d6_Star-1-2.svg" alt="" class="icon small">
             </div>
           </div>
@@ -513,7 +419,7 @@ how much revenue they're silently losing</p>
       </div>
     </div>
   </section>
-  <section class="section hide">
+  <section class="section">
     <div class="padding-global">
       <div class="container-medium"><img src="images/6911525effdd7ff9f214d6bb_element.png" loading="lazy" sizes="(max-width: 1185px) 100vw, 1185px" srcset="images/6911525effdd7ff9f214d6bb_element-p-500.png 500w, images/6911525effdd7ff9f214d6bb_element-p-800.png 800w, images/6911525effdd7ff9f214d6bb_element-p-1080.png 1080w, images/6911525effdd7ff9f214d6bb_element.png 1185w" alt="" class="element-background">
         <div class="section-tittle"><img src="images/6911483925d3c8f4ba654166_Dynamic-Black-and-White-Portrait.avif" loading="lazy" alt="" class="profile-medium">
@@ -541,21 +447,18 @@ how much revenue they're silently losing</p>
         <div class="wrapper flex">
           <!-- LEFT: image panel -->
           <div class="enterprise-panel">
+            <div class="badge">
+              <div class="title-badge white">See Flowtusk in action</div>
+            </div>
             <div class="enterprise-slides">
               <div class="enterprise-slide active" data-slide="0">
-                <video class="enterprise-img" muted loop playsinline preload="none" aria-label="Trigger workflow demo">
-                  <source src="https://res.cloudinary.com/dugm7jn6f/video/upload/v1775363459/trigger_cvwngq.mp4" type="video/mp4">
-                </video>
+                <img src="https://placehold.co/480x300/161616/969696?text=Scalable+AI+Solutions" alt="Scalable AI solutions" class="enterprise-img">
               </div>
               <div class="enterprise-slide" data-slide="1">
-                <video class="enterprise-img" muted loop playsinline preload="none" aria-label="Action workflow demo">
-                  <source src="https://res.cloudinary.com/dugm7jn6f/video/upload/v1775363458/action_xwigud.mp4" type="video/mp4">
-                </video>
+                <img src="https://placehold.co/480x300/161616/969696?text=Data+Analytics" alt="Innovative Data Analytics" class="enterprise-img">
               </div>
               <div class="enterprise-slide" data-slide="2">
-                <video class="enterprise-img" muted loop playsinline preload="none" aria-label="Customize workflow demo">
-                  <source src="https://res.cloudinary.com/dugm7jn6f/video/upload/v1775363458/customize_xmop07.mp4" type="video/mp4">
-                </video>
+                <img src="https://placehold.co/480x300/161616/969696?text=Intelligent+Automation" alt="Intelligent Automation" class="enterprise-img">
               </div>
             </div>
           </div>
@@ -566,24 +469,24 @@ how much revenue they're silently losing</p>
               <img loading="lazy" src="images/6912ab5b3c9ee4d0fb493e02_iconoir--flash-solid-p-500.png" alt="" class="icon">
               <div class="line flex mini"></div>
               <div class="content info">
-                <div class="sub-heading-regular left">Choose your trigger</div>
-                <p class="paragraph-regular left">Every flow starts with a Webflow event: form submission, new order, CMS publish, or member signup.</p>
+                <div class="sub-heading-regular left">Choose trigger</div>
+                <p class="paragraph-regular left">Every flow starts with a Webflow event. Choose what triggers it, and Flowtusk listens for it 24/7.</p>
               </div>
             </div>
             <div class="card product-info enterprise-tab" data-slide="1">
               <img loading="lazy" src="images/solar--plug-circle-linear.svg" alt="" class="icon">
               <div class="line flex mini"></div>
               <div class="content info">
-                <div class="sub-heading-regular left">Connect your tools</div>
-                <p class="paragraph-regular left">Drag in a HubSpot, Slack, or Gmail node and connect it to the trigger. When the event fires, the action runs.</p>
+                <div class="sub-heading-regular left">Select action</div>
+                <p class="paragraph-regular left">Your trigger activates an action in any connected tool like HubSpot, Slack or email instantly, automatically, every time.</p>
               </div>
             </div>
             <div class="card product-info enterprise-tab" data-slide="2">
               <img loading="lazy" src="images/solar--code-square-linear.svg" alt="" class="icon">
               <div class="line flex mini"></div>
               <div class="content info">
-                <div class="sub-heading-regular left">Add logic when you need it</div>
-                <p class="paragraph-regular left">Parser, Filter, and Variable nodes sit between trigger and action so you can map fields and shape the flow.</p>
+                <div class="sub-heading-regular left">Customize logic</div>
+                <p class="paragraph-regular left">Between trigger and action, you can add logic nodes to transform data, set conditions, or control exactly when actions run.</p>
               </div>
             </div>
           </div>
@@ -599,8 +502,8 @@ how much revenue they're silently losing</p>
             <div class="title-badge white" id="pricing">Pricing</div>
           </div>
           <div class="text">
-            <h2 class="heading-style-h2">Simple pricing. No surprises.</h2>
-            <p class="paragraph-large center">Start free. Pay when your flows do more.</p>
+            <h2 class="heading-style-h2">Select a plan <span class="text-span">that grows with</span> your business.</h2>
+            <p class="paragraph-large center">Start free. Upgrade when you're ready.</p>
           </div>
         </div>
         <div class="wrapper">
@@ -609,45 +512,12 @@ how much revenue they're silently losing</p>
               <div class="wrapper-plan">
                 <div class="content-plan">
                   <div class="column-list">
-                    <div class="sub-heading-large">Free</div>
-                    <div class="badge">
-                      <div class="title-badge white">Get started</div>
-                    </div>
-                  </div>
-                  <p class="paragraph-regular left">One site. Five flows. See if it clicks.</p>
-                  <div class="sub-heading-large">€0</div>
-                  <a data-wf--button--variant="pricing" href="#" class="button w-variant-1b2c8350-b97f-828f-f751-238fc3ef975f w-button">Start free</a>
-                </div><img loading="lazy" src="images/ggg.png" alt="" sizes="(max-width: 1400px) 100vw, 1400px" srcset="images/691148fc1c41e1a17acb6bf1_Bg-1-p-500.png 500w, images/691148fc1c41e1a17acb6bf1_Bg-1-p-800.png 800w, images/691148fc1c41e1a17acb6bf1_Bg-1-p-1080.png 1080w, images/ggg.png 1400w" class="element-pricing">
-              </div>
-              <div class="devinder"></div>
-              <div class="list-plan">
-                <div class="helper-sections"><img loading="lazy" src="images/6911628aa66ae9bf48cd4962_ep--success-filled-p-500.png" alt="" class="icon">
-                  <p class="paragraph-small">1 Webflow site</p>
-                </div>
-                <div class="helper-sections"><img loading="lazy" src="images/6911628aa66ae9bf48cd4962_ep--success-filled-p-500.png" alt="" class="icon">
-                  <p class="paragraph-small">5 active flows</p>
-                </div>
-                <div class="helper-sections"><img loading="lazy" src="images/6911628aa66ae9bf48cd4962_ep--success-filled-p-500.png" alt="" class="icon">
-                  <p class="paragraph-small">Form Submission trigger</p>
-                </div>
-                <div class="helper-sections"><img loading="lazy" src="images/6911628aa66ae9bf48cd4962_ep--success-filled-p-500.png" alt="" class="icon">
-                  <p class="paragraph-small">HubSpot and Gmail actions</p>
-                </div>
-                <div class="helper-sections"><img loading="lazy" src="images/6911628aa66ae9bf48cd4962_ep--success-filled-p-500.png" alt="" class="icon">
-                  <p class="paragraph-small">Community support</p>
-                </div>
-              </div>
-            </div>
-            <div data-wf--pricing-card--variant="active" class="plans-list">
-              <div class="wrapper-plan w-variant-82ed14ba-322e-0112-99ef-1147f144cf52">
-                <div class="content-plan">
-                  <div class="column-list">
                     <div class="sub-heading-large">Starter</div>
                     <div class="badge">
-                      <div class="title-badge white">Most popular</div>
+                      <div class="title-badge white">New</div>
                     </div>
                   </div>
-                  <p class="paragraph-regular left">For freelancers and small teams connecting one client site.</p>
+                  <p class="paragraph-regular left">1 Webflow site. Unlimited form submissions. HubSpot sync.</p>
                   <div class="sub-heading-large">€29/month</div>
                   <a data-wf--button--variant="pricing" href="#" class="button w-variant-1b2c8350-b97f-828f-f751-238fc3ef975f w-button">Get started</a>
                 </div><img loading="lazy" src="images/ggg.png" alt="" sizes="(max-width: 1400px) 100vw, 1400px" srcset="images/691148fc1c41e1a17acb6bf1_Bg-1-p-500.png 500w, images/691148fc1c41e1a17acb6bf1_Bg-1-p-800.png 800w, images/691148fc1c41e1a17acb6bf1_Bg-1-p-1080.png 1080w, images/ggg.png 1400w" class="element-pricing">
@@ -655,35 +525,32 @@ how much revenue they're silently losing</p>
               <div class="devinder"></div>
               <div class="list-plan">
                 <div class="helper-sections"><img loading="lazy" src="images/6911628aa66ae9bf48cd4962_ep--success-filled-p-500.png" alt="" class="icon">
-                  <p class="paragraph-small">1 Webflow site</p>
+                  <p class="paragraph-small">Smart task management</p>
                 </div>
                 <div class="helper-sections"><img loading="lazy" src="images/6911628aa66ae9bf48cd4962_ep--success-filled-p-500.png" alt="" class="icon">
-                  <p class="paragraph-small">Unlimited flows</p>
+                  <p class="paragraph-small">Custom dashboard layouts</p>
                 </div>
                 <div class="helper-sections"><img loading="lazy" src="images/6911628aa66ae9bf48cd4962_ep--success-filled-p-500.png" alt="" class="icon">
-                  <p class="paragraph-small">All triggers: forms, orders, CMS, memberships, site publish</p>
+                  <p class="paragraph-small">Automated reminders</p>
                 </div>
                 <div class="helper-sections"><img loading="lazy" src="images/6911628aa66ae9bf48cd4962_ep--success-filled-p-500.png" alt="" class="icon">
-                  <p class="paragraph-small">HubSpot, Slack and Gmail actions</p>
+                  <p class="paragraph-small">Real-time team sync</p>
                 </div>
                 <div class="helper-sections"><img loading="lazy" src="images/6911628aa66ae9bf48cd4962_ep--success-filled-p-500.png" alt="" class="icon">
-                  <p class="paragraph-small">Logic nodes: Parser, Filter, Variable</p>
-                </div>
-                <div class="helper-sections"><img loading="lazy" src="images/6911628aa66ae9bf48cd4962_ep--success-filled-p-500.png" alt="" class="icon">
-                  <p class="paragraph-small">Email support</p>
+                  <p class="paragraph-small">Core analytics access</p>
                 </div>
               </div>
             </div>
-            <div data-wf--pricing-card--variant="base" class="plans-list">
-              <div class="wrapper-plan">
+            <div data-wf--pricing-card--variant="active" class="plans-list">
+              <div class="wrapper-plan w-variant-82ed14ba-322e-0112-99ef-1147f144cf52">
                 <div class="content-plan">
                   <div class="column-list">
-                    <div class="sub-heading-large">Pro</div>
+                    <div class="sub-heading-large">PRO</div>
                     <div class="badge">
-                      <div class="title-badge white">For agencies</div>
+                      <div class="title-badge white">Most Popular</div>
                     </div>
                   </div>
-                  <p class="paragraph-regular left">For agencies managing multiple client sites under one account.</p>
+                  <p class="paragraph-regular left">Up to 10 Webflow sites. Slack + email notifications. Priority support. Ideal for agencies.</p>
                   <div class="sub-heading-large">€79/month</div>
                   <a data-wf--button--variant="pricing" href="#" class="button w-variant-1b2c8350-b97f-828f-f751-238fc3ef975f w-button">Get started</a>
                 </div><img loading="lazy" src="images/ggg.png" alt="" sizes="(max-width: 1400px) 100vw, 1400px" srcset="images/691148fc1c41e1a17acb6bf1_Bg-1-p-500.png 500w, images/691148fc1c41e1a17acb6bf1_Bg-1-p-800.png 800w, images/691148fc1c41e1a17acb6bf1_Bg-1-p-1080.png 1080w, images/ggg.png 1400w" class="element-pricing">
@@ -691,29 +558,23 @@ how much revenue they're silently losing</p>
               <div class="devinder"></div>
               <div class="list-plan">
                 <div class="helper-sections"><img loading="lazy" src="images/6911628aa66ae9bf48cd4962_ep--success-filled-p-500.png" alt="" class="icon">
-                  <p class="paragraph-small">Up to 10 Webflow sites</p>
+                  <p class="paragraph-small">Advanced automation tools</p>
                 </div>
                 <div class="helper-sections"><img loading="lazy" src="images/6911628aa66ae9bf48cd4962_ep--success-filled-p-500.png" alt="" class="icon">
-                  <p class="paragraph-small">Unlimited flows</p>
+                  <p class="paragraph-small">Full analytics suite</p>
                 </div>
                 <div class="helper-sections"><img loading="lazy" src="images/6911628aa66ae9bf48cd4962_ep--success-filled-p-500.png" alt="" class="icon">
-                  <p class="paragraph-small">All triggers and actions</p>
-                </div>
-                <div class="helper-sections"><img loading="lazy" src="images/6911628aa66ae9bf48cd4962_ep--success-filled-p-500.png" alt="" class="icon">
-                  <p class="paragraph-small">Logic nodes included</p>
-                </div>
-                <div class="helper-sections"><img loading="lazy" src="images/6911628aa66ae9bf48cd4962_ep--success-filled-p-500.png" alt="" class="icon">
-                  <p class="paragraph-small">Console debugging</p>
+                  <p class="paragraph-small">Custom workflows</p>
                 </div>
                 <div class="helper-sections"><img loading="lazy" src="images/6911628aa66ae9bf48cd4962_ep--success-filled-p-500.png" alt="" class="icon">
                   <p class="paragraph-small">Priority support</p>
                 </div>
                 <div class="helper-sections"><img loading="lazy" src="images/6911628aa66ae9bf48cd4962_ep--success-filled-p-500.png" alt="" class="icon">
-                  <p class="paragraph-small">Team access</p>
+                  <p class="paragraph-small">Unlimited collaborators</p>
                 </div>
               </div>
             </div>
-            <div data-wf--pricing-card--variant="base" class="plans-list hide">
+            <div data-wf--pricing-card--variant="base" class="plans-list">
               <div class="wrapper-plan">
                 <div class="content-plan">
                   <div class="column-list">
@@ -722,36 +583,30 @@ how much revenue they're silently losing</p>
                       <div class="title-badge white">VIP</div>
                     </div>
                   </div>
-                  <p class="paragraph-regular left">Unlimited sites, white-label option, dedicated onboarding.</p>
-                  <div class="sub-heading-large">Custom</div>
+                  <p class="paragraph-regular left">Unlimited sites. White-label option. Dedicated onboarding. SLA support.</p>
+                  <div class="sub-heading-large">Custom pricing</div>
                   <a data-wf--button--variant="pricing" href="#" class="button w-variant-1b2c8350-b97f-828f-f751-238fc3ef975f w-button">Talk to us</a>
                 </div><img loading="lazy" src="images/ggg.png" alt="" sizes="(max-width: 1400px) 100vw, 1400px" srcset="images/691148fc1c41e1a17acb6bf1_Bg-1-p-500.png 500w, images/691148fc1c41e1a17acb6bf1_Bg-1-p-800.png 800w, images/691148fc1c41e1a17acb6bf1_Bg-1-p-1080.png 1080w, images/ggg.png 1400w" class="element-pricing">
               </div>
               <div class="devinder"></div>
               <div class="list-plan">
                 <div class="helper-sections"><img loading="lazy" src="images/6911628aa66ae9bf48cd4962_ep--success-filled-p-500.png" alt="" class="icon">
-                  <p class="paragraph-small">Unlimited Webflow sites</p>
+                  <p class="paragraph-small">Smart task management</p>
                 </div>
                 <div class="helper-sections"><img loading="lazy" src="images/6911628aa66ae9bf48cd4962_ep--success-filled-p-500.png" alt="" class="icon">
-                  <p class="paragraph-small">White-label dashboard</p>
+                  <p class="paragraph-small">Custom dashboard layouts</p>
                 </div>
                 <div class="helper-sections"><img loading="lazy" src="images/6911628aa66ae9bf48cd4962_ep--success-filled-p-500.png" alt="" class="icon">
-                  <p class="paragraph-small">Dedicated onboarding session</p>
+                  <p class="paragraph-small">Automated reminders</p>
                 </div>
                 <div class="helper-sections"><img loading="lazy" src="images/6911628aa66ae9bf48cd4962_ep--success-filled-p-500.png" alt="" class="icon">
-                  <p class="paragraph-small">SLA support</p>
+                  <p class="paragraph-small">Real-time team sync</p>
                 </div>
                 <div class="helper-sections"><img loading="lazy" src="images/6911628aa66ae9bf48cd4962_ep--success-filled-p-500.png" alt="" class="icon">
-                  <p class="paragraph-small">Custom integrations on request</p>
-                </div>
-                <div class="helper-sections"><img loading="lazy" src="images/6911628aa66ae9bf48cd4962_ep--success-filled-p-500.png" alt="" class="icon">
-                  <p class="paragraph-small">Volume pricing</p>
+                  <p class="paragraph-small">Core analytics access</p>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="helper-column center" style="margin-top:24px;">
-            <p class="paragraph-regular center">All plans work on any Webflow plan. No Enterprise contract required.</p>
           </div>
         </div>
       </div>
@@ -851,47 +706,59 @@ how much revenue they're silently losing</p>
         <div class="grid testimonials">
           <div class="card testimonials">
             <div class="column-testimonials">
-              <img loading="lazy" src="https://i.pravatar.cc/120?img=5" alt="Sarah K." class="user-profile">
               <div class="column-icon"><img loading="lazy" src="images/691152b39472df5114fea3ff_pepicons-pencil--star-filled-p-500.png" alt="" class="icon"><img loading="lazy" src="images/691152b39472df5114fea3ff_pepicons-pencil--star-filled-p-500.png" alt="" class="icon"><img loading="lazy" src="images/691152b39472df5114fea3ff_pepicons-pencil--star-filled-p-500.png" alt="" class="icon"><img loading="lazy" src="images/691152b39472df5114fea3ff_pepicons-pencil--star-filled-p-500.png" alt="" class="icon"></div>
               <div class="text left">
+                <div class="sub-heading-regular left">Sarah K.</div>
                 <p class="paragraph-regular left">&quot;We were copy-pasting Webflow leads into HubSpot for 6 months. Flowtusk fixed it in an afternoon.&quot;</p>
               </div>
-              <div class="testimonial-meta">
-                <div class="sub-heading-regular left">Sarah K.</div>
-                <p class="paragraph-small">Marketing Ops, Webflow agency</p>
+            </div>
+            <div class="content-testimonials _2">
+              <div class="name"><img loading="lazy" src="images/6911483925d3c8f4ba65416b_Dynamic-Afro-Portrait.avif" alt="" class="user-profile">
+                <p class="paragraph-regular center">Sarah K. &mdash; Marketing Ops, Design Studio</p>
+              </div>
+              <div class="icon-wrapper-outline">
+                <div class="icon-wrapper"><img loading="lazy" src="images/6911483925d3c8f4ba6541e5_017997b6bf6e5fba4e080dcbed9790c8_uil--instagram-p-500.png" alt="" class="icon mini"><img loading="lazy" src="images/6912a8c563edc57efb665044_Animate.png" alt="" class="animation-element"></div>
               </div>
             </div>
           </div>
           <div class="card testimonials">
             <div class="column-testimonials">
-              <img loading="lazy" src="https://i.pravatar.cc/120?img=59" alt="Mehmet Arda" class="user-profile">
               <div class="column-icon"><img loading="lazy" src="images/691152b39472df5114fea3ff_pepicons-pencil--star-filled-p-500.png" alt="" class="icon"><img loading="lazy" src="images/691152b39472df5114fea3ff_pepicons-pencil--star-filled-p-500.png" alt="" class="icon"><img loading="lazy" src="images/691152b39472df5114fea3ff_pepicons-pencil--star-filled-p-500.png" alt="" class="icon"><img loading="lazy" src="images/691152b39472df5114fea3ff_pepicons-pencil--star-filled-p-500.png" alt="" class="icon"></div>
               <div class="text left">
+                <div class="sub-heading-regular left">Laura P.</div>
                 <p class="paragraph-regular left">&quot;Our HubSpot workflows weren&apos;t firing because the native integration kept dropping. Flowtusk just works.&quot;</p>
               </div>
-              <div class="testimonial-meta">
-                <div class="sub-heading-regular left">Mehmet Arda</div>
-                <p class="paragraph-small">Senior Webflow developer</p>
+            </div>
+            <div class="content-testimonials _2">
+              <div class="name"><img loading="lazy" src="images/6911483925d3c8f4ba65416a_Dynamic-Portrait-Pose.avif" alt="" class="user-profile">
+                <p class="paragraph-regular center">Laura P. &mdash; Head of Growth, SaaS platform</p>
+              </div>
+              <div class="icon-wrapper-outline">
+                <div class="icon-wrapper"><img loading="lazy" src="images/6911483925d3c8f4ba6541e5_017997b6bf6e5fba4e080dcbed9790c8_uil--instagram-p-500.png" alt="" class="icon mini"><img loading="lazy" src="images/6912a8c563edc57efb665044_Animate.png" alt="" class="animation-element"></div>
               </div>
             </div>
           </div>
           <div class="card testimonials">
             <div class="column-testimonials">
-              <img loading="lazy" src="https://i.pravatar.cc/120?img=12" alt="Chris A." class="user-profile">
               <div class="column-icon"><img loading="lazy" src="images/691152b39472df5114fea3ff_pepicons-pencil--star-filled-p-500.png" alt="" class="icon"><img loading="lazy" src="images/691152b39472df5114fea3ff_pepicons-pencil--star-filled-p-500.png" alt="" class="icon"><img loading="lazy" src="images/691152b39472df5114fea3ff_pepicons-pencil--star-filled-p-500.png" alt="" class="icon"><img loading="lazy" src="images/691152b39472df5114fea3ff_pepicons-pencil--star-filled-p-500.png" alt="" class="icon"></div>
               <div class="text left">
+                <div class="sub-heading-regular left">Chris A.</div>
                 <p class="paragraph-regular left">&quot;As an agency, managing 8 client sites was a nightmare. Now it&apos;s one dashboard.&quot;</p>
               </div>
-              <div class="testimonial-meta">
-                <div class="sub-heading-regular left">Chris A.</div>
-                <p class="paragraph-small">Founder, B2B Growth agency</p>
+            </div>
+            <div class="content-testimonials _2">
+              <div class="name"><img loading="lazy" src="images/6911483925d3c8f4ba65416b_Dynamic-Afro-Portrait.avif" alt="" class="user-profile">
+                <p class="paragraph-regular center">Chris A. &mdash; Founder, Digital Agency</p>
+              </div>
+              <div class="icon-wrapper-outline">
+                <div class="icon-wrapper"><img loading="lazy" src="images/6911483925d3c8f4ba6541e5_017997b6bf6e5fba4e080dcbed9790c8_uil--instagram-p-500.png" alt="" class="icon mini"><img loading="lazy" src="images/6912a8c563edc57efb665044_Animate.png" alt="" class="animation-element"></div>
               </div>
             </div>
           </div>
         </div>
         <div class="badge transparant">
-          <div class="column-image"><img src="https://i.pravatar.cc/120?img=18" loading="lazy" alt="Customer avatar" class="profile-mini"><img src="https://i.pravatar.cc/120?img=41" loading="lazy" alt="Customer avatar" class="profile-mini"><img src="https://i.pravatar.cc/120?img=63" loading="lazy" alt="Customer avatar" class="profile-mini"></div>
-          <div class="tittle-badge">Used by Webflow agencies and teams in early access across the UK, EU, and US.</div>
+          <div class="column-image"><img src="images/6911483925d3c8f4ba654169_Dynamic-Black-and-White-Portrait-3.jpeg" loading="lazy" sizes="(max-width: 960px) 100vw, 960px" srcset="images/6911483925d3c8f4ba654169_Dynamic-Black-and-White-Portrait-3-p-500.jpeg 500w, images/6911483925d3c8f4ba654169_Dynamic-Black-and-White-Portrait-3-p-800.jpeg 800w, images/6911483925d3c8f4ba654169_Dynamic-Black-and-White-Portrait-3.jpeg 960w" alt="" class="profile-mini"><img src="images/6911483925d3c8f4ba654169_Dynamic-Black-and-White-Portrait-3.jpeg" loading="lazy" sizes="(max-width: 960px) 100vw, 960px" srcset="images/6911483925d3c8f4ba654169_Dynamic-Black-and-White-Portrait-3-p-500.jpeg 500w, images/6911483925d3c8f4ba654169_Dynamic-Black-and-White-Portrait-3-p-800.jpeg 800w, images/6911483925d3c8f4ba654169_Dynamic-Black-and-White-Portrait-3.jpeg 960w" alt="" class="profile-mini"><img src="images/6911483925d3c8f4ba654169_Dynamic-Black-and-White-Portrait-3.jpeg" loading="lazy" sizes="(max-width: 960px) 100vw, 960px" srcset="images/6911483925d3c8f4ba654169_Dynamic-Black-and-White-Portrait-3-p-500.jpeg 500w, images/6911483925d3c8f4ba654169_Dynamic-Black-and-White-Portrait-3-p-800.jpeg 800w, images/6911483925d3c8f4ba654169_Dynamic-Black-and-White-Portrait-3.jpeg 960w" alt="" class="profile-mini"></div>
+          <div class="tittle-badge">Loved by 25,000+ clients</div>
         </div>
       </div>
     </div>
@@ -915,7 +782,7 @@ how much revenue they're silently losing</p>
               <div class="faq-icon"><img loading="lazy" src="images/6912acee51f02284c52fe658_gg_track.png" alt="" class="icon mini"></div>
             </div>
             <div class="faq-answer">
-              <p class="paragraph-regular answer">For Webflow, yes. Flowtusk connects directly to Webflow's native events without a Zapier account or subscription. If you're using Zapier purely to bridge Webflow and HubSpot, Flowtusk handles that and costs less. If you use Zapier across dozens of unrelated apps, Flowtusk sits alongside it, just handling the Webflow side.</p>
+              <p class="paragraph-regular answer">Yes — for the Webflow → HubSpot connection specifically. Direct API connection, no per-task billing, no fragile Zap chains.</p>
             </div>
           </div>
           <div data-w-id="4702322c-0635-3364-e209-9afd05bc0127" class="faq-accordion">
@@ -924,7 +791,7 @@ how much revenue they're silently losing</p>
               <div class="faq-icon"><img loading="lazy" src="images/6912acee51f02284c52fe658_gg_track.png" alt="" class="icon mini"></div>
             </div>
             <div class="faq-answer">
-              <p class="paragraph-regular answer">Flowtusk checks by email address. If the contact exists, it updates their record. If not, it creates a new one. You won't end up with duplicate contacts.</p>
+              <p class="paragraph-regular answer">Flowtusk checks first. Updates if found, creates if not. No duplicates.</p>
             </div>
           </div>
           <div data-w-id="4702322c-0635-3364-e209-9afd05bc0127" class="faq-accordion">
@@ -933,43 +800,7 @@ how much revenue they're silently losing</p>
               <div class="faq-icon"><img loading="lazy" src="images/6912acee51f02284c52fe658_gg_track.png" alt="" class="icon mini"></div>
             </div>
             <div class="faq-answer">
-              <p class="paragraph-regular answer">No. Flowtusk sends data via the HubSpot API, which preserves source, UTM parameters, and deal history. Your reporting stays intact. If you have specific attribution requirements, reach out before setting up.</p>
-            </div>
-          </div>
-          <div data-w-id="4702322c-0635-3364-e209-9afd05bc0127" class="faq-accordion">
-            <div class="faq-question">
-              <div class="sub-heading-large">Does Flowtusk work with my current Webflow plan?</div>
-              <div class="faq-icon"><img loading="lazy" src="images/6912acee51f02284c52fe658_gg_track.png" alt="" class="icon mini"></div>
-            </div>
-            <div class="faq-answer">
-              <p class="paragraph-regular answer">Yes. All plans. Basic, CMS, Business, and Enterprise. You don't need a Webflow Enterprise contract to use it.</p>
-            </div>
-          </div>
-          <div data-w-id="4702322c-0635-3364-e209-9afd05bc0127" class="faq-accordion">
-            <div class="faq-question">
-              <div class="sub-heading-large">Can I test a flow before it goes live?</div>
-              <div class="faq-icon"><img loading="lazy" src="images/6912acee51f02284c52fe658_gg_track.png" alt="" class="icon mini"></div>
-            </div>
-            <div class="faq-answer">
-              <p class="paragraph-regular answer">Yes. The Console node lets you debug a flow before activating it, so you can confirm data is being sent correctly before anything reaches HubSpot or Slack.</p>
-            </div>
-          </div>
-          <div data-w-id="4702322c-0635-3364-e209-9afd05bc0127" class="faq-accordion">
-            <div class="faq-question">
-              <div class="sub-heading-large">What Webflow events does Flowtusk support?</div>
-              <div class="faq-icon"><img loading="lazy" src="images/6912acee51f02284c52fe658_gg_track.png" alt="" class="icon mini"></div>
-            </div>
-            <div class="faq-answer">
-              <p class="paragraph-regular answer">Form Submission, Site Publish, Page Created, Page Updated, Page Deleted, Ecomm New Order, Ecomm Order Changed, Ecomm Inventory Changed, User Account Added, Updated and Deleted, and all Collection Item events: Created, Changed, Deleted, Published, and Unpublished.</p>
-            </div>
-          </div>
-          <div data-w-id="4702322c-0635-3364-e209-9afd05bc0127" class="faq-accordion">
-            <div class="faq-question">
-              <div class="sub-heading-large">What happens if HubSpot or Slack is temporarily down?</div>
-              <div class="faq-icon"><img loading="lazy" src="images/6912acee51f02284c52fe658_gg_track.png" alt="" class="icon mini"></div>
-            </div>
-            <div class="faq-answer">
-              <p class="paragraph-regular answer">Flowtusk queues the payload and retries. Your data doesn't disappear because a destination tool had a hiccup.</p>
+              <p class="paragraph-regular answer">The opposite — it fixes it. The HubSpot tracking cookie passes through, so lead source and campaign appear correctly in your reports.</p>
             </div>
           </div>
         </div>
@@ -979,18 +810,18 @@ how much revenue they're silently losing</p>
   <section class="section">
     <div class="padding-global">
       <div class="container-medium">
-        <div class="cta" id="contact">
+        <div class="cta">
           <div class="section-tittle">
             <div class="badge">
               <div class="title-badge white">Get started free</div>
             </div>
             <div class="text">
               <h2 class="heading-style-h2">Your next lead shouldn’t require a copy-paste.</h2>
-              <p class="paragraph-large center">Connect your Webflow site to HubSpot, Slack, and Gmail in minutes. First flow is free.</p>
+              <p class="paragraph-large center">Flowtusk syncs your Webflow forms to HubSpot automatically. Set up in 5 minutes.</p>
             </div>
             <div class="form-block w-form">
               <form id="email-form" name="email-form" data-name="Email Form" method="get" class="form subscribes" data-wf-page-id="69b9c364b76b481a67bebfe3" data-wf-element-id="cf0627fe-3569-c013-8c8b-ed6cfbdd869f">
-                <div class="form-column"><input class="text-field w-input" maxlength="256" name="field" data-name="Field" placeholder="Enter your work email" type="text" id="field" required=""></div><input type="submit" data-wait="Please wait..." class="button submit w-button" value="Get early access">
+                <div class="form-column"><input class="text-field w-input" maxlength="256" name="field" data-name="Field" placeholder="Example Text" type="text" id="field" required=""></div><input type="submit" data-wait="Please wait..." class="button submit w-button" value="Submit">
               </form>
               <div class="w-form-done">
                 <div>Thank you! Your submission has been received!</div>
@@ -1001,13 +832,13 @@ how much revenue they're silently losing</p>
             </div>
             <div class="helper-column center">
               <div class="badge">
-                <div class="title-badge white">No credit card required</div>
+                <div class="title-badge white">Early Feature Access</div>
               </div>
               <div class="badge">
-                <div class="title-badge white">Works on any Webflow plan</div>
+                <div class="title-badge white">Weekly Insights</div>
               </div>
               <div class="badge">
-                <div class="title-badge white">Set up in under 5 minutes</div>
+                <div class="title-badge white">Exclusive Resources</div>
               </div>
             </div>
           </div>
@@ -1098,25 +929,6 @@ how much revenue they're silently losing</p>
       var tabs = document.querySelectorAll('.enterprise-tab');
       var slides = document.querySelectorAll('.enterprise-slide');
 
-      function syncEnterpriseVideos(activeSlide) {
-        slides.forEach(function (slide) {
-          var video = slide.querySelector('video');
-          if (!video) return;
-
-          if (slide === activeSlide) {
-            video.preload = 'metadata';
-            video.currentTime = 0;
-            var playPromise = video.play();
-            if (playPromise && typeof playPromise.catch === 'function') {
-              playPromise.catch(function () {});
-            }
-          } else {
-            video.pause();
-            video.preload = 'none';
-          }
-        });
-      }
-
       tabs.forEach(function (tab) {
         tab.addEventListener('click', function () {
           var target = this.getAttribute('data-slide');
@@ -1126,14 +938,9 @@ how much revenue they're silently losing</p>
 
           this.classList.add('active-tab');
           var activeSlide = document.querySelector('.enterprise-slide[data-slide="' + target + '"]');
-          if (activeSlide) {
-            activeSlide.classList.add('active');
-            syncEnterpriseVideos(activeSlide);
-          }
+          if (activeSlide) { activeSlide.classList.add('active'); }
         });
       });
-
-      syncEnterpriseVideos(document.querySelector('.enterprise-slide.active'));
     })();
   </script>
 </body>
